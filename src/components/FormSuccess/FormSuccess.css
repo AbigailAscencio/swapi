@@ -1,0 +1,22 @@
+.success__container {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.success__logo {
+  width: 270px;
+  height: 270px;
+}
+
+.success__title {
+  margin-top: 0em;
+  color: var(--white);
+  text-align: center;
+  font-size: 3.5rem;
+}

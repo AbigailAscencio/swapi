@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  background-image: url("../../assets/images/pexels-aleksandar-pasaric-1694000.jpg");
+  background-size: cover;
+  z-index: 20;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 10px;
+  max-width: 1400px;
+  height: 134px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}

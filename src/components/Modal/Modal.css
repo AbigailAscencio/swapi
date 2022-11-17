@@ -1,0 +1,92 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 50;
+}
+
+.modal__container {
+  position: relative;
+  max-width: 540px;
+  width: 100%;
+  background-color: var(--background-modal);
+  transition: all 0.35s ease;
+}
+
+.modal__logo {
+  margin: 30px 0 10px;
+}
+
+.modal__invalid,
+.modal__form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.modal__invalid {
+  padding: 1em 3em;
+  color: var(--red-modal);
+  border: 1px solid var(--red-modal);
+}
+
+.modal__title {
+  margin: 0 0 12px;
+  color: var(--yellow-modal);
+  font-size: 1.656rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  color: var(--grey-color);
+}
+
+.form__submit,
+.form__account {
+  height: 40px;
+  padding: 0 18px;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.form__submit {
+  background-color: var(--grey-modal);
+  color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+.form__submit:hover,
+.form__submit:focus {
+  background-color: var(--blue-modal);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 38px;
+  width: 38px;
+  background-color: transparent;
+  color: var(--white);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.modal__close ion-icon {
+  font-size: 2.5rem;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  opacity: 1;
+}
